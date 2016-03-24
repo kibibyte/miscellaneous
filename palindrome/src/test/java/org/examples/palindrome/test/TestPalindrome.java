@@ -21,7 +21,6 @@ public class TestPalindrome {
         Assert.assertTrue(palindromeChecker.isPalindrome("121"));
     }
 
-
     @Test
     public void phraseShouldBePalindromeExtraCharacters() {
         Assert.assertTrue(palindromeChecker.isPalindrome("A new order began, a more Roman age bred Rowena."));
