@@ -8,6 +8,7 @@ import org.junit.Test;
 
 
 public class TestPalindrome {
+
     private PalindromeChecker palindromeChecker = new PalindromeChecker();
 
     @Test
@@ -39,6 +40,5 @@ public class TestPalindrome {
     public void phraseShouldBePalindromeSingleLetter() {
         Assert.assertTrue(palindromeChecker.isPalindrome("A"));
     }
-
 
 }
