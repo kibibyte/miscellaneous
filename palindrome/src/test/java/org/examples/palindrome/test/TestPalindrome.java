@@ -17,6 +17,12 @@ public class TestPalindrome {
     }
 
     @Test
+    public void phraseShouldBePalindromeNumerical() {
+        Assert.assertTrue(palindromeChecker.isPalindrome("121"));
+    }
+
+
+    @Test
     public void phraseShouldBePalindromeExtraCharacters() {
         Assert.assertTrue(palindromeChecker.isPalindrome("A new order began, a more Roman age bred Rowena."));
     }
