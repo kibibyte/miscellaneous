@@ -11,12 +11,12 @@ public class TestPalindrome {
     private PalindromeChecker palindromeChecker = new PalindromeChecker();
 
     @Test
-    public void shouldValidatePalindrome() {
+    public void phraseShouldBePalindrome() {
         Assert.assertTrue(palindromeChecker.isPalindrome("A new order began, a more Roman age bred Rowena."));
     }
 
     @Test
-    public void shouldNotValidatePalindrome() {
+    public void phraseShouldNotBePalindrome() {
         Assert.assertFalse(palindromeChecker.isPalindrome("a more Roman age bred Rowena."));
     }
 }
