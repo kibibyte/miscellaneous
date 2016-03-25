@@ -7,17 +7,14 @@ public class PalindromeChecker {
         if (candidate == null) {
             throw new IllegalArgumentException();
         }
-        return isCandidatePalindrome(candidate.toLowerCase().replaceAll("[^A-Za-z0-9]", ""));
-    }
-
-    private boolean isCandidatePalindrome(String candidate) {
-        if (candidate.length() == 0 || candidate.length() == 1) {
-            return true;
+        candidate = candidate.toLowerCase().replaceAll("[^A-Za-z0-9]", "");
+        int right = candidate.length() - 1;
+        int left = 0;
+        while (left < right) {
+            if (candidate.charAt(left++) != candidate.charAt(right--)) {
+                return false;
+            }
         }
-        if (candidate.charAt(0) == candidate.charAt(candidate.length() - 1)) {
-            return isCandidatePalindrome(candidate.substring(1, candidate.length() - 1));
-        }
-        return false;
+        return true;
     }
-
 }
