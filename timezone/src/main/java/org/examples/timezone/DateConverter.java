@@ -6,11 +6,11 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 
-public class TimeZoneConverter {
+public class DateConverter {
 
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
 
-    public String convertDate(String date, String sourceTimeZone, String destinationTimeZone) {
+    public String convert(String date, String sourceTimeZone, String destinationTimeZone) {
         ZoneId sourceZoneId = ZoneId.of(sourceTimeZone);
         ZoneId destinationZoneId = ZoneId.of(destinationTimeZone);
         LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
