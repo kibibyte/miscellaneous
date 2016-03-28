@@ -12,4 +12,4 @@ Checks if given string is palindrome
 
 # date-converter 
 
-Convertes given date from one timezone to another
+Converts given date from one timezone to another
