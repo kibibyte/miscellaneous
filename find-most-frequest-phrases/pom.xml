@@ -6,7 +6,7 @@
 		<artifactId>examples</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>most-frequest-phrase</artifactId>
+	<artifactId>find-most-frequest-phrases</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.h2database</groupId>
