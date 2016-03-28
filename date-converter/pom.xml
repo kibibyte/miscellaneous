@@ -5,5 +5,5 @@
     <artifactId>examples</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <artifactId>timezone-converter</artifactId>
+  <artifactId>date-converter</artifactId>
 </project>

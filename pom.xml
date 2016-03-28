@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>palindrome-checker</module>
-		<module>timezone-converter</module>
+		<module>date-converter</module>
 		<module>find-most-frequest-phrases</module>
 	</modules>
 <build>
